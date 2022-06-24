@@ -1,0 +1,158 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+
+main {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section.flex-container-a {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.list-of-songs {
+    flex: 1 1 auto;
+}
+
+.current-song {
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: darkcyan;
+    height: 300px;
+    padding-left: 20px;
+}
+
+.progress-music {
+    width: 45%;
+}
+
+.progress-music hr {
+    border: solid 1px white;
+}
+
+.progress-music hr::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: white;
+    position: relative;
+}
+
+.info-current-song {
+    margin-left: 30px;
+}
+
+.control-buttons {
+    margin-top: 110px;
+}
+
+.control-buttons>a {
+    padding: 5px;
+    color: white;
+}
+
+.current-song>img {
+    width: 300px;
+}
+
+.flex-container-b {
+    flex: 1 1 100%;
+    background-color: darkcyan;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-container {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container>div {
+    height: 100px;
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.img-container>img {
+    width: 150px;
+}
+
+.music-controls>a {
+    margin: 0px 5px;
+    padding: 5px;
+    color: white;
+    border-radius: 100%;
+}
+
+.music-controls>a:hover {
+    border: solid 1px white;
+}
+
+a>i {
+    text-align: center;
+}
+
+.playlist {
+    padding: 30px;
+}
+
+table {
+    margin: 0 auto;
+    width: 100%;
+}
+
+tr:nth-child(2n) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: gainsboro;
+}
+
+td {
+    font-size: 18px;
+    padding: 8px;
+}
+
+.btn-cloud {
+    border: solid 1px black;
+    font-size: x-small;
+    padding: 1px;
+}
+
+
+aside.aside-buttons {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    justify-content: space-around;
+}
+
+.aside-buttons>li {
+    list-style: none;
+    width: 40px;
+    text-align: center;
+    font-size: 12px;
+}
